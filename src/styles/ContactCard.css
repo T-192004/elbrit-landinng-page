@@ -1,0 +1,76 @@
+.contact-card{
+    list-style: none;
+    width: 435.98px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #215D72;
+    margin: 10px;
+    display:flex;
+    padding: 20px;
+    flex-direction: row;
+    align-items: center;
+}
+img {
+    width:60px;
+    height: 60px;
+    margin-right: 10px;
+}
+p {
+    text-align: left;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0.07999999821186066px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #fff;
+}
+
+
+
+
+/* Responsive Styles */
+
+/* Tablet Screens (768px and below) */
+@media (max-width: 768px) {
+    .contact-card {
+        flex-direction: column; /* Stack content vertically */
+        align-items: center;
+        text-align: center; /* Center-align text */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .contact-card img {
+        margin: 0 0 10px 0; /* Center image and add spacing below it */
+        width: 40px; /* Reduce size for smaller screens */
+        height: 40px;
+    }
+
+    .contact-card p {
+        font-size: 16px; /* Adjust font size */
+    }
+}
+
+/* Mobile Screens (480px and below) */
+@media (max-width: 480px) {
+    .contact-card {
+        width: 80%; /* Use most of the screen width */
+        margin: 5px auto; /* Center cards with reduced spacing */
+        padding: 8px;
+        display: flex;
+        flex-direction: row;
+    }
+    .contact-card div {
+        width: 80%;
+    }
+    .contact-card img {
+        width: 30px; /* Further reduce size */
+        height: 35px;
+    }
+
+    .contact-card p {
+        font-size: 14px; /* Smaller text for mobile */
+    }
+}

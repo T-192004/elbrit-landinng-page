@@ -1,0 +1,84 @@
+.news-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #fff;
+    margin: 30px;
+    p{
+        color: #003569;
+        font-size: 13px;
+        font-weight: 600;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        margin: 0px;
+        
+    }
+    h1 {
+        font-size: 38px;
+        font-weight: 600;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: #17414F;
+        margin: 0px;
+    }
+}
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+}
+  
+  .news-item {
+    position: relative; /* To position the date badge */
+    background-color: white; /* Card background */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Clip overflowing content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.2s, box-shadow 0.2s; /* Smooth hover effects */
+    margin: 10px;
+    width: 100%;
+    border-radius: 20px;
+    width: 250px;
+    height: 300px;  
+  }
+  
+  .news-item:hover {
+    transform: translateY(-5px); /* Lift effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+  }
+  
+  .news-item img {
+    width: 100%; /* Full width image */
+    height: 100%; /* Maintain aspect ratio */
+    z-index: -1;
+  }
+  
+  .news-item p {
+    font-size: 1.1rem;
+    color: #333; /* Text color */
+    text-align: left;
+    position: absolute;
+    top: 49px;
+    left: 25px;
+    font-size: 10px;
+    color: #fff;
+  }
+  
+  .date {
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    z-index: 1;
+    background-color:  #003569;
+    color: white;
+    border-top-right-radius: 13px;
+    border-bottom-right-radius: 13px;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+  

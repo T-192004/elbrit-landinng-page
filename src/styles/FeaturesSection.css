@@ -1,0 +1,142 @@
+.features-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+    background-color: #17414F;
+    max-width: 60%;
+    width: 1464px;
+height: 486px;
+position: relative;
+top: -120px;
+left: 20px;
+gap: 0px;
+border-radius: 80px;
+
+}
+
+.feature-item {
+    max-width: 100%;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    position: relative;
+    top:-160px;
+    left: 5.41px;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .icon{
+        background: white;
+        width: 130px;
+        height: 130px;
+        margin: 30px;
+        border-radius: 65px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        img {
+            width: 40px;
+            height: 38px;
+            margin: 5px;
+        }
+    }
+    .content{
+        max-width: 230px;
+        color: #FFFFFF;
+        text-align: center;
+        flex-wrap: wrap;
+        h3 {
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        p {
+            color: #6b7280;
+            font-size: 12px;
+            text-align: center;
+            font-weight: 400;
+        }
+    }
+}
+
+
+
+/* Media Query for Tablets (Screens < 1024px) */
+@media (max-width: 1024px) {
+    .features-section {
+        height: auto;
+        padding: 30px 15px; /* Adjust padding for smaller screens */
+    }
+
+    .feature-item {
+        width: calc(50% - 20px); /* Two items per row */
+        margin: 0 auto;
+    }
+}
+
+/* Media Query for Mobile Devices (Screens < 768px) */
+@media (max-width: 768px) {
+    .features-section {
+        height: auto;
+        padding: 20px 10px; 
+        display: flex;
+        flex-direction: row;
+        /* Reduce padding */
+    }
+
+    .feature-item {
+        width: 40%;
+        position: relative;
+        top: -120px;
+    }
+
+    .icon {
+        width: 80px; /* Shrink icon size */
+        height: 80px;
+    }
+
+    .content h3 {
+        font-size: 14px; /* Smaller heading */
+    }
+
+    .content p {
+        font-size: 12px; /* Smaller paragraph */
+    }
+}
+
+/* Media Query for Extra Small Screens (Screens < 480px) */
+@media (max-width: 480px) {
+    .features-section {
+        padding: 10px 5px; 
+        height: auto;
+    }
+
+    .feature-item {
+        width: 100%;
+        position: relative;
+        top: -120px;
+        left: 10px;
+    }
+
+    .icon {
+        width: 30px;
+        height: 30px;
+        img {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    .content h3 {
+        font-size: 12px;
+    }
+
+    .content p {
+        font-size: 10px;
+    }
+}
